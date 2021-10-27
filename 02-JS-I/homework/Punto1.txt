@@ -1,0 +1,130 @@
+PUNTO 1
+
+_____________________________________________________
+
+VARIABLES: 
+
+Son contenedores o espacios asignados para el posterior deposito de contenido. 
+El significado o valor de una variable puede ser definida en el mismo momento de su creación o bien solo la creamos, pero 
+la dejamos sin definir (var perro); es decir que la variable ya existe, pero como no le asignamos un valor esta "undefined".
+
+Ej:
+
+var perro (variable sin definir //undenined)
+var perro = dogo (variable con contenido definido //dogo)
+
+Los tipo de contenidos o "valores" que pueden albergar las variables se denominan OBJETOS. Los mismos pueden ser desde los
+más simples [Strings (cadena de textos o caractéres), Numbers (enteros o decimales) , and Booleans (true or false).]
+hasta los más complejos [Arrays, Funciones, Condicionales (if, else if, else), Bucles, y Class).
+
+Además de "var" las variables se pueden definir con "let", pero en ambos casos sus contenidos no son fijos, sino que 
+pueden ser redefinidos posteriormente asignandoles un nuevo valor.
+
+Para que una variable quede fija, y ya no se le pueda asignar un valor nuevo debemos usar "const".
+
+Ej:
+
+const perro = caniche (si tratamos de cambiar este valor en el futuro nos saltará un error en el código)
+
+_____________________________________________________
+
+STRINGS
+
+Los string son cadenas de textos o caracteres y se expresan entrecomillados (ej: "este perro es un dogo")
+En los string los espacios cuentan tanto como el resto de los caracteres. Hay un espacio o posición 
+asignados para ellos también.
+
+_____________________________________________________
+
+FUNCIONES
+
+Bajo un nombre o palabra clave podemos guardar una serie de acciones que resulten de la interaccion entre 
+variables y operadores (llamemosle "operaciones"). Dichas operaciones pueden ir desde las mas simples, 
+como una suma, división o comparación, hasta los más complejos códigos compuestos por cantidad de operaciones.
+Ese nombre o palabra clave que contiene dentro dicha cadena de códigos se denomina Función, y tiene el 
+objeto de poder llamar al contenido posteriormente con una sola palabra sin tener la necesidad de reescribir
+el código en cuestión.
+
+Anatomía de las Funciones:
+
+function registrar() {}
+
+Iniciamos con la palabra preasignada por Javascript "function"; seguido un espacio y el nombre que le vamos a 
+poner a la función ("registrar" en este caso). Luego entre paréntesis vamos ponemos el ARGUMENTO, que es la 
+variable -o variables- que van a dar la condición que pondra en acción a la instrucción que pondremos dentro 
+de las llaves {}.
+
+Return
+
+Sin bien toda función desencadena una acción, que le ponemos dentro de las llaves, una vez que lo ponemos en 
+acción con la variable dentro de los paréntesis, esa acción que desencadena no siempre devuelve un "valor".
+Cuando queremos que retorne un valor tenemos que incluir el comando "return" dentro del argumento.
+
+Ej:
+
+function sumarDosVaiables(a,b) {
+  var concluzio = (a + b);
+  return concluzio;
+};
+
+sumarDosVaiables (2,5); // 7
+
+_____________________________________________________
+
+DECLARACIONES
+
+Casi todo en Javascript es una "declaración". De hecho de que, en este lenguaje, las declaraciones o "Statements" tengan
+una sintaxis adecuada dependerá el buen funcionamiento de un código o cadena de códigos. A diferencias de las "Expressions", 
+las declaraciones o "Statements" implican realizanr algo en particular, realizan una acción.
+Entre las declaraciones podemos destacar las declaraciones condicionales: if, else if, else.
+
+IF 
+
+Ejecuta una instrucción o código que le ponemos entre las llaves {} si la condición o argumento que le ponemos previamente 
+entre parentesis () se cumple. IF produce una bifurcación del código en la cual de no cumplirse da lugar a las dos 
+declaraciones a continuación;
+
+ELSE IF
+
+Nos da la posibilidad de volver a poner entre parentesis una nueva condición, para ejecutar una nueva acción o instrucción
+de cumplirse dicha condición.
+
+ELSE
+
+De no cumplirse ninguno de los argumentos tenemos la posibilidad de ejecutar una nueva acción o sentencia por la negativa.
+
+Ejemplo:
+
+if (nota >= 6) {
+	alert(`estas aprobado`);
+}
+else if (nota >= 4) {
+	alert(`te la llevas a diciembre`);
+}
+else  {	alert(`te la llevas a febrero`);
+
+
+_____________________________________________________
+
+
+VALORES BOOLEANOS
+
+Los booleanos provienen de la lógica de Boole. Es un concepto que alimenta el código binario y el núcleo de las 
+computadoras. Es posible que haya visto código binario en el pasado (0001 0110…), esto es lógica booleana. 
+Esencialmente significa que tiene dos opciones, activar o desactivar, 0 o 1, verdadero o falso. En Javascript 
+usamos booleanos para significar verdadero o falso. Esto puede parecer simple al principio, pero puede complicarse 
+más adelante. (OBVIAMENTE LO COPIE sino hubiese contestado es true or false, simplemente) 
+
+Ejemplo:
+
+( 3 > 1 ) // false -------> aca la operación de comparación nos arroja un valor booleano como resultado.
+
+var monovirtuosolog = true -----> aca nosotros definimos arbitrariamente una variable otorgandole un valor booleano.
+
+
+
+
+
+
+
+
