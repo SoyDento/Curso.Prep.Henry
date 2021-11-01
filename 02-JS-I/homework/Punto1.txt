@@ -13,7 +13,7 @@ Ej:
 var perro (variable sin definir //undenined)
 var perro = dogo (variable con contenido definido //dogo)
 
-Los tipo de contenidos o "valores" que pueden albergar las variables se denominan OBJETOS. Los mismos pueden ser desde los
+Los tipo de contenidos o "valores" que pueden albergar las variables diversos. Los mismos pueden ser desde los
 más simples [Strings (cadena de textos o caractéres), Numbers (enteros o decimales) , and Booleans (true or false).]
 hasta los más complejos [Arrays, Funciones, Condicionales (if, else if, else), Bucles, y Class).
 

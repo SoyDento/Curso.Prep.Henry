@@ -1,0 +1,70 @@
+PUNTOuno
+
+_________________
+
+FOR
+
+Cuando queremos que un programa se ejecute tantas veces como sea necesario,
+hasta encontrase con una expresión particular, usamos "for".
+
+La estructura es la siguiente:
+
+for ( declaración ; condición ; iteración ) { declaración de la acción a ejecutar };
+
+Ej: 
+
+for (let i = 6; i >= 0; i--) { document.write(i + "<br>") };  
+
+El navegador nos devolvera:
+
+6
+5
+4
+3
+2
+1
+0
+
+_________________
+
+&&
+
+Es un operador lógico que nos devuelve true (verdadero) si los dos valores booleano
+que compara son true. Si alguno de los dos es false (falso) nos devuelve false.
+Los dos valores a comparar se ubican uno a cada lado del operador (&&).
+
+Ej:
+
+true && false  // false
+
+_________________
+
+||
+
+Es un operador lógico que nos devuelve true (verdadero) si los dos valores booleano
+que compara son false. Si alguno de los dos es true nos devuelve false.
+Los dos valores a comparar se ubican uno a cada lado del operador (||).
+
+Ej:
+
+false && false  // true
+
+_________________
+
+
+!
+
+Es un operador lógico que nos devuelve el valor booleano opuesto al que recibe.
+
+Ej:
+
+!fase // true
+!true // false
+
+
+
+
+
+
+
+

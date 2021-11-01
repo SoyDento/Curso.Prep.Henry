@@ -1,0 +1,14 @@
+UNOpunto
+
+____________
+
+ARRAY
+
+Es una matriz o contenedor que puede contener dentro todo tipo de datos. Desde los más simples,
+como string, mull, numbers y booleanos, hasta los mas complejos como funciones y clases.
+Tenerlos guardados nos permite llamarlos despues para utilizarlos en la programación 
+de soluciones que involucren a dichos elementos.
+
+Ej:
+
+let arrayMio = [ 3 , [ a , b , c ] , 'hola como estás?' , false , 'Pedro' , [function2()] , '$' ]
