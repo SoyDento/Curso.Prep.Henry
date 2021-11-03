@@ -105,7 +105,7 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
 let num = [];
-  return Math.max(num)
+  return Math.max(num);
 }
 
 
@@ -113,6 +113,7 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+if(arguments.length < 1) return 0;
 
 var multip = 1;
 
@@ -127,12 +128,12 @@ return multip
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-let array = [];
-while (arreglo > 18){
-  push.array()
-};
-return array.length
-
+let contador = 0;
+  for (let i = 0; i < arreglo.length ; i++) {
+    if(arreglo[i] > 19){
+      contador++
+    } return contador;
+}
 }
 
 
@@ -150,8 +151,9 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  let cadena = 9;
-  return n.starwith(cadena)
+  let cadena = '9';
+  if (n.starWith(cadena) && true) {return true}
+   else {return false}
 }
 
 
@@ -174,10 +176,10 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
 let nuevoArray = [];
-if (array.includes("Enero")) {nuevoArray.push("Enero")}
-  else if (array.includes("Marzo")) {nuevoArray.push("Marzo")}
-  else if (array.includes("Noviembre")) {nuevoArray.push("Noviembre")}
-    else if (nuevoArray.includes("Marzo") && nuevoArray.includes("Enero") && nuevoArray.includes("Noviembre") ) {
+if (array.includes('Enero')) {nuevoArray.push('Enero')}
+  else if (array.includes('Marzo')) {nuevoArray.push('Marzo')}
+  else if (array.includes('Noviembre')) {nuevoArray.push('Noviembre')}
+    else if (array.includes('Enero') && array.includes('Marzo') && array.includes('Noviembre') ) {
       return nuevoArray;
     } else {return "No se encontraron los meses pedidos"}
 }
@@ -193,7 +195,7 @@ for(let i= 0; i < array.length; i++) {
       nuevoArray.push(array[i]);
     }
   }
-  return nuevoArray;
+  return nuevoArray
 }
 
 
@@ -205,6 +207,15 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+let n = numero;
+let nuevoArray = [];
+
+for (var i = 0; i < 10; i++) {n = n + 2; nuevoArray.push(n);
+  if (n === i) break; 
+    }
+
+if (i >= 10) {return nuevoArray}
+ else {return "Se interrumpió la ejecución"}
 }
 
 
@@ -215,6 +226,15 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+let n = numero;
+let nuevoArray = [];
+
+for (var i = 0; i < 10; i++) { 
+  if (i == 5) continue;
+    else 
+   {n = n + 2; nuevoArray.push(n)};
+   }
+  return nuevoArray
 }
 
 
