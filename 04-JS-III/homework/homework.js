@@ -27,14 +27,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-let array2 = [];
-
-if (array.isInteger()) {array2.push(array)};
 
 for(var i = 0; i < array.length; i++) {
-    array2[i] = array[i] + 1;
+    array[i] = array[i] + 1;
   }
-  return array2;
+  return array;
 }
 
 
@@ -42,7 +39,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-array[array.length-1] = elemento;
+array.push(elemento);
   return array;
 }
 
@@ -104,9 +101,10 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
-let num = [];
-  return Math.max(num);
+  return  Math.max.apply(null, numeros)
 }
+  
+
 
 
 function multiplicarArgumentos() {
@@ -132,8 +130,9 @@ let contador = 0;
   for (let i = 0; i < arreglo.length ; i++) {
     if(arreglo[i] > 19){
       contador++
-    } return contador;
-}
+    }
+  }
+  return contador
 }
 
 
@@ -151,8 +150,10 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
+  let num = n.toString();
   let cadena = '9';
-  if (n.starWith(cadena) && true) {return true}
+  let comprob = num.startsWith(cadena);
+  if (comprob && true) {return true}
    else {return false}
 }
 
@@ -175,14 +176,21 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-let nuevoArray = [];
-if (array.includes('Enero')) {nuevoArray.push('Enero')}
-  else if (array.includes('Marzo')) {nuevoArray.push('Marzo')}
-  else if (array.includes('Noviembre')) {nuevoArray.push('Noviembre')}
-    else if (array.includes('Enero') && array.includes('Marzo') && array.includes('Noviembre') ) {
+var nuevoArray = [];
+  for(let i= 0; i<array.length; i++) {
+    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+      nuevoArray.push(array[i]);
+    }
+  }
+  if(nuevoArray.length < 3) {
+    return "No se encontraron los meses pedidos";
+  }
+  else {
       return nuevoArray;
-    } else {return "No se encontraron los meses pedidos"}
+  }
 }
+
+
 
 
 function mayorACien(array) {
