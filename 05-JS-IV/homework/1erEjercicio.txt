@@ -1,0 +1,65 @@
+PUNTO UNO
+
+_______________________
+
+OBJETOS >>>> PROPIEDADES
+
+Son contenedores de información. La información que guardan son las PROPIEDADE propias de ese OBJETO.
+
+Ej: 
+
+Objeto1 = {
+	nombre: Matías Hernán,
+	apellido: Dentoni,
+	username: matimat,
+	saludo: function() { console.log('Hola ' + this.username)},
+	colores favorios: ['rojo','blanco','azul'],
+	miembro chj: true
+	};
+
+_______________________
+
+PROPIEDADES >>>> (LLAVE:VALOR)
+
+Las Propiedades estan conformada por una LLAVE, que es la palabra clave que me traera el "valor" que
+la misma contiene. La palabra clave no puede repetirse dentro de un OBJETO, pero los valores si
+pueden repetirse dentro de las LLAVE diferentes del Objeto.
+
+_______________________
+
+METODO
+
+Dentro de los Objetos las funciones se denominan Métodos.
+
+Ej:
+saludo: function() { console.log('Hola ' + this.username)} //función dentro de Objeto1 = método
+	
+_______________________
+
+BUCLE for...in
+
+Se usa para iterar en Objetos aludiendo a sus Propiedades (LLAVE:VALOR) ya que, a diferencia de los 
+Arrays, los Objetos no tienen posiciones numericas para ser recorridas en ese orden.
+
+for (let LLAVE in OBJETO) {...}
+
+_______________________
+
+Notación de puntos vs notación de corchetes
+
+Para llamar a una propiedad de un objeto o adhisionar a un objeto una nueva propiedad
+hay dos formas:
+
+1-Notación de puntos:
+
+objeto1.username;  //matimat
+
+objeto1.edad = '23'; //sumamos una nueva propiedad al objeto existente
+
+2-Notación de corchetes
+
+objeto1['username']; //matimat
+
+objeto1['edad'] = '23';  //sumamos una nueva propiedad al objeto existente
+
+ 
