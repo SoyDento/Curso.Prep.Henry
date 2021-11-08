@@ -1,0 +1,17 @@
+Primer Item
+
+_________________
+
+PROTOTYPE
+
+Son los metodos o funciones de una Clase y pueden ser reutilizados 
+por todos los objetos de esa clase sin necesidad de que cada
+objeto tenga un método para si. Ahorra memoria.
+
+__________________
+
+CONSTRUCTOR
+
+El método constructor es un método especial para crear e inicializar 
+un objeto creado con un class. Solo puede haber un método especial con 
+el nombre "constructor" en una clase.
