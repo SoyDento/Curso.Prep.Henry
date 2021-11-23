@@ -1,0 +1,161 @@
+
+body {
+  background:  grey;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+
+.UNO {
+  grid-area: header;
+  display: flex;
+  background-color: rgb(80,80,80);
+
+}
+.DOS {
+  grid-area: jobs;
+
+}
+.TRES{
+  grid-area: foto;
+  background-color: rgb(140,140,140);
+
+}
+.CUATRO {
+  grid-area: Contacts;
+  margin: 15px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+ }
+
+.container {
+  width: 800px;
+  background: rgb(255,255,255);
+  display: grid;
+  margin: 0;
+
+  grid-template-columns: 22% 22% 22% 34%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "jobs jobs jobs foto"
+    "Contacts Contacts Contacts Contacts";
+}
+
+
+.encabezado{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0
+}
+
+.divsJobs{
+  margin: 15px;
+}
+
+.second {
+  margin: 20px;
+}
+
+
+
+.nav__ul{
+            display: flex;
+            position: relative;
+            justify-content: space-around;
+            font-size: 13px;
+            float: center;
+            flex-wrap: wrap;
+            color: #fff;
+              }
+
+.nav__li {
+  display: inline-block;
+  padding: 12px;
+  
+}
+
+.nav__li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav__li i {
+  width: 30px;
+  box-sizing: border-box;
+  text-align: right;
+  margin-right: 10px;
+  margin-left: 10px;
+    }
+
+.linea {
+  width: 10px;
+  left: 100%;
+  background-color: red;
+}
+
+
+
+#MHD{
+  width: 70%;
+  padding: 20px;
+  background-color: rgb(200,200,200);
+  border-radius: 0 0 5em 0;
+ }
+
+
+
+#yo{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  object-fit: none;
+}
+
+#slogan{
+  position: absolute;
+  top: 18%;
+  right:  30%;
+  color: white
+  
+}
+
+
+.nav__li:hover {
+  color:  blue;
+}
+
+.TRES:hover{
+  grid-area: foto;
+  background-color: rgb(20,140,140);
+}
+
+.encabezado:hover{
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  margin: 0;
+  transition: height 5s
+}
+
+
+@media only screen and (max-width: 800px){
+  #slogan{
+    display: none;
+  }
+
+}
