@@ -1,3 +1,4 @@
+
 // No cambies los nombres de las funciones.
 
 function deObjetoAmatriz(objeto){
@@ -26,14 +27,13 @@ function numberOfCharacters(string) {
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
 
-
-
 var repe = {};
 var array  = string.split('');
 var objeto = array.forEach(function(i) {
       if (repe[i]) {repe[i]++} else {repe[i] = 1}
   });
   return repe;
+
 }
 
 
@@ -42,6 +42,23 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+
+var array2 = [];
+var array3 = [];
+var m = s.toUpperCase() ;
+for (let e in s ) {
+  if (m.includes(s[e])) {
+          array2.push(s[e]);
+             }else{
+      array3.push(s[e]); 
+    };
+
+  }
+
+    var string2 = array2.join('');
+    var string3 = array3.join('');
+    var string4 = string2.concat(string3);
+    return string4;
 }
 
 
